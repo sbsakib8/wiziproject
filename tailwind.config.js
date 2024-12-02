@@ -8,7 +8,26 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        worksans: ['Work Sans', 'sans-serif'],
+        Montserrat: ['Montserrat', 'sans-serif'],
+      },
+      colors: {
+        primary: '#002228',
+        secondary: '#0FF1F6',
+       
+      },
+    },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
   },
   darkMode: "class",
   plugins: [nextui()],
