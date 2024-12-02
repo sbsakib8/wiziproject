@@ -18,6 +18,9 @@ export default {
         secondary: '#0FF1F6',
        
       },
+      backgroundImage: {
+        'hero-pattern': "url('/img/herobg.png')",
+      }
     },
     container: {
       padding: {

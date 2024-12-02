@@ -4,8 +4,14 @@
 @tailwind utilities;
 
 
+
+
 @layer utilities{
     .navberitme{
         @apply font-worksans text-white font-normal text-[16px] leading-[24px];
     }
+    .hero_h4{
+        @apply  font-Montserrat font-normal text-[24px] leading-[29.26px] text-secondary text-wrap ;
+    }
+   
 }
