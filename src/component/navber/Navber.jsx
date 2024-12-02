@@ -1,71 +1,72 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
 
-
- function Navber() {
+import Btn from "../button/Btn";
+ function Navbers() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    "About Us",
+    "Pricing",
+    "Customers",
+    "Solutions",
+   
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent>
-        <NavbarMenuToggle
+    <Navbar onMenuOpenChange={setIsMenuOpen} className=" bg-primary pt-3">
+      <NavbarContent className=" ">
+        <NavbarMenuToggle 
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="sm:hidden text-secondary "
         />
         <NavbarBrand>
-         {/* logo */}
-          <p className="font-bold text-inherit">ACME</p>
+          
+          <p className="font-bold text-inherit">
+            <img className=" " src="img/Logo.png" alt="" />
+          </p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
+      <NavbarContent  className="hidden sm:flex gap-4" justify="center">
+      <NavbarItem>
+          <Link className="navberitme" color="foreground" href="#">
+          About Us
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
+      <NavbarItem>
+          <Link className="navberitme" color="foreground" href="#">
+          Pricing
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+      <NavbarItem>
+          <Link className="navberitme" color="foreground" href="#">
+          Customers
+          </Link>
+        </NavbarItem>
+      <NavbarItem>
+          <Link className="navberitme" color="foreground" href="#">
+          Solutions
           </Link>
         </NavbarItem>
       </NavbarContent>
+      
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
+        
+        <NavbarItem className="md:flex gap-6">
+          <Btn title='Book a Demo' className=' hidden  md:block w-[122px] h-[36px] py-1 px-2'/>
+          <Btn title='Contact Us' className=' hidden  md:block w-[122px] h-[36px] py-1 px-4 bg-black text-white border-white border-solid border-[1.4893px]'/>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
+      <NavbarMenu className=" bg-primary">
+     
+      {menuItems.map((item, index) => (
+          <NavbarMenuItem   key={`${item}-${index}`}>
+            <Link 
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              className="w-full"
+              className=" mt-2 text-white text-center"
               href="#"
               size="lg"
             >
@@ -77,4 +78,4 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, Navbar
     </Navbar>
   );
 }
-export default Navber;
+export default Navbers;
