@@ -1,8 +1,8 @@
 
 import './App.css'
-import Btn from './component/button/Btn'
 import Navbers from './component/navber/Navber'
 import Hero from './page/Home/Hero'
+import Partners from './page/Home/Partners'
 
 
 
@@ -14,7 +14,7 @@ function App() {
    <>
    <Navbers/>
    <Hero/>
-  
+  <Partners/>
    </>
   )
 }

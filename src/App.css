@@ -10,8 +10,25 @@
     .navberitme{
         @apply font-worksans text-white font-normal text-[16px] leading-[24px];
     }
+    /* hero section start */
+    .hero_div{
+        @apply container flex flex-col items-center justify-center md:items-start md:justify-center h-full space-y-6 md:space-y-4 lg:space-y-2;
+    }
     .hero_h4{
         @apply  font-Montserrat font-normal text-[24px] leading-[29.26px] text-secondary text-wrap ;
     }
-   
+   .hero_title{
+    @apply text-center sm:text-start max-w-[601px]  h-[88px] lg:h-[156px] font-Montserrat font-bold text-[40px] md:text-[55px] lg:text-[64px] leading-[44px]  lg:leading-[78px] text-white ;
+   }
+   .hero_p{
+    @apply text-center  sm:text-start  font-worksans max-w-[450px] h-[78px] font-light text-[20px] leading-6 text-gray-300 text-wrap;
+   }
+   /* hero section end */
+   .partner_title{
+    @apply  text-center pt-8 text-secondary font-normal text-[16px] leading-[19px] font-Montserrat;
+   }
+   .partner_div{
+    @apply  container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 justify-items-center pt-9 gap-6;
+   }
+
 }
