@@ -1,6 +1,6 @@
 import React from 'react'
 import Partnerdata from './../../data/partners/Partnerdata';
-import { div } from 'framer-motion/client';
+
 function Partners() {
   return (
     <div className='bg-[#07292F] w-full h-auto py-6 md:py-9 lg:py-16 '>

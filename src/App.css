@@ -24,11 +24,28 @@
     @apply text-center  sm:text-start  font-worksans max-w-[450px] h-[78px] font-light text-[20px] leading-6 text-gray-300 text-wrap;
    }
    /* hero section end */
+
+   /* partner section start  */
    .partner_title{
     @apply  text-center pt-8 text-secondary font-normal text-[16px] leading-[19px] font-Montserrat;
    }
    .partner_div{
     @apply  container grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 justify-items-center pt-9 gap-6;
    }
+/*  partner section end */
 
+/* card section start */
+.card_maindiv{
+    @apply  container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center;
+}
+.card_childdiv{
+    @apply  max-w-[384px] h-[254px] space-y-4;
+}
+.card_title{
+    @apply font-Montserrat font-semibold text-[28px] leading-[34px] text-white;
+}
+.card_p{
+    @apply max-w-[380] font-worksans font-light text-[22px] text-gray-300 text-wrap;
+}
+/* card section end */
 }
