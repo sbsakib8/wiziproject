@@ -49,8 +49,8 @@
 }
 /* card section end */
 /* train section start */
-.train_main{
-    @apply container space-y-9 bg-hero-pattern flex flex-col justify-center items-center py-24;
+.train_main ,.allocate_main{
+    @apply container  space-y-9 bg-hero-pattern bg-no-repeat rounded-2xl shadow-lg flex flex-col justify-center items-center py-24;
 }
 .train_title , .allocated_title , .embrace_title{
     @apply  font-Montserrat font-semibold text-white text-[28px] leading-[38px] md:text-[33px] md:leading-[42px]  lg:text-[40px] lg:leading-[48px];

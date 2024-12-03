@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+ /*============== custom scroll bar============ */
+ ::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:#002228;
+}
+::-webkit-scrollbar-thumb{
+    background: #0FF1F6;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #CFBAFF;
+}
+/*============== custom scroll bar end============ */

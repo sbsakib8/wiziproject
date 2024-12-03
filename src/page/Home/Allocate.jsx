@@ -2,9 +2,9 @@ import React from 'react'
 
 function Allocate() {
   return (
-    <div className=' bg-primary w-full'>
+    <div className=' bg-primary w-full h-auto py-16 lg:py-12 flex flex-1 justify-center'>
         {/* main div */}
-       <div className=' container bg-hero-pattern w-full h-auto py-20 space-y-28'>
+       <div className=' allocate_main '>
          {/* child 1 */}
         <div className=' space-y-4'>
             <h3 className=' max-w-[591px] allocated_title'>Allocate effort where your reps make an inpact.</h3>
@@ -37,3 +37,4 @@ function Allocate() {
 }
 
 export default Allocate
+

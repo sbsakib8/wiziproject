@@ -2,7 +2,7 @@ import React from 'react'
 import { HiCheckCircle } from "react-icons/hi";
 function Train() {
   return (
-    <div className='  bg-primary w-full h-auto py-16 lg:py-12'>
+    <div className='  bg-primary w-full h-auto py-16 lg:py-12 flex flex-1 justify-center'>
         {/* main div */}
         <div className='train_main' >
            {/* child 1 */}

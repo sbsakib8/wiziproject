@@ -1,6 +1,5 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
-
 import Btn from "../button/Btn";
  function Navbers() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -30,22 +29,22 @@ import Btn from "../button/Btn";
 
       <NavbarContent  className="hidden sm:flex gap-4" justify="center">
       <NavbarItem>
-          <Link className="navberitme" color="foreground" href="#">
+          <Link to='/About' className="navberitme" color="foreground" href="#">
           About Us
           </Link>
         </NavbarItem>
       <NavbarItem>
-          <Link className="navberitme" color="foreground" href="#">
+          <Link to='/Pricing' className="navberitme" color="foreground" href="#">
           Pricing
           </Link>
         </NavbarItem>
       <NavbarItem>
-          <Link className="navberitme" color="foreground" href="#">
+          <Link to='/Customers' className="navberitme" color="foreground" href="#">
           Customers
           </Link>
         </NavbarItem>
       <NavbarItem>
-          <Link className="navberitme" color="foreground" href="#">
+          <Link to='/Solutions' className="navberitme" color="foreground" href="#">
           Solutions
           </Link>
         </NavbarItem>
