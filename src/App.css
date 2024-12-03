@@ -48,4 +48,23 @@
     @apply max-w-[380] font-worksans font-light text-[22px] text-gray-300 text-wrap;
 }
 /* card section end */
+/* train section start */
+.train_main{
+    @apply container space-y-9 bg-hero-pattern flex flex-col justify-center items-center py-24;
+}
+.train_title{
+    @apply  font-Montserrat font-semibold text-white text-[28px] leading-[38px] md:text-[33px] md:leading-[42px]  lg:text-[40px] lg:leading-[48px];
+}
+.train_h4{
+    @apply  font-Montserrat font-medium italic text-secondary text-[28px] leading-[34px] md:text-[33px] md:leading-[40px] lg:text-[40px] lg:leading-[48px];
+}
+.train_description{
+    @apply  max-w-[450px] font-worksans font-light text-gray-300 text-wrap text-[18px] leading-[23px] md:text-[24px] md:leading-[31px];
+}
+
+.train_p{
+    @apply  flex gap-2 mx-auto font-Montserrat font-medium text-[20px] leading-[26px] text-[#14BCB2] ;
+}
+
+/* train section end  */
 }
