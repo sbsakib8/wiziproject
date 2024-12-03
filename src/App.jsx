@@ -4,6 +4,7 @@ import Navbers from './component/navber/Navber'
 import Allocate from './page/Home/Allocate'
 import Cards from './page/Home/Cards'
 import Embrace from './page/Home/Embrace'
+import Footer from './page/Home/Footer'
 import Hero from './page/Home/Hero'
 import Partners from './page/Home/Partners'
 import Sliders from './page/Home/Slider'
@@ -26,6 +27,7 @@ function App() {
    <Sliders/>
    <Allocate/>
    <Embrace/>
+   <Footer/>
    </>
   )
 }

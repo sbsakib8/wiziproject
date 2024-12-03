@@ -99,5 +99,12 @@
     @apply  max-w-[326px] md:max-w-[700px] ;
 }
 
+/* footer section done  */
+.footer_main{
+    @apply container flex  flex-col md:flex-row justify-between gap-7  items-center;
+}
 
+.footer_p{
+    @apply text-[#96ACAF] text-wrap font-worksans;
+}
 }
