@@ -52,13 +52,13 @@
 .train_main{
     @apply container space-y-9 bg-hero-pattern flex flex-col justify-center items-center py-24;
 }
-.train_title , .allocated_title{
+.train_title , .allocated_title , .embrace_title{
     @apply  font-Montserrat font-semibold text-white text-[28px] leading-[38px] md:text-[33px] md:leading-[42px]  lg:text-[40px] lg:leading-[48px];
 }
-.train_h4 , .allocated_h4{
+.train_h4 , .allocated_h4, .embrace_h4{
     @apply  font-Montserrat font-medium italic text-secondary text-[28px] leading-[34px] md:text-[33px] md:leading-[40px] lg:text-[40px] lg:leading-[48px];
 }
-.train_description , .allocated_description {
+.train_description , .allocated_description , .embrace_description {
     @apply  max-w-[450px] font-worksans font-light text-gray-300 text-wrap text-[18px] leading-[23px] md:text-[24px] md:leading-[31px];
 }
 
@@ -91,4 +91,13 @@
     @apply  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 justify-items-center md:justify-items-start;
 }
 /* allicote secton end */
+/* embrace section start */
+.embrace_main{
+    @apply bg-primary py-8 md:py-6 lg:py-16 w-full h-auto  ;
+}
+.embrace_description{
+    @apply  max-w-[326px] md:max-w-[700px] ;
+}
+
+
 }
