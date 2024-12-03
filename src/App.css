@@ -67,4 +67,23 @@
 }
 
 /* train section end  */
+
+/* slider section start  */
+
+.slider_main{
+    @apply bg-primary w-full h-auto flex justify-center items-center;
+}
+
+.slider_description{
+    @apply font-worksans font-light text-white text-wrap text-[24px] leading-[31px] md:text-[28px] lg:text-[32px] lg:leading-[41px] py-8 ;
+}
+.slider_custom{
+    @apply   font-worksans font-normal text-xl leading-[30px]
+}
+
+
+
+
+
+/* slider section end  */
 }
